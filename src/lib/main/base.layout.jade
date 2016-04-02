@@ -6,7 +6,7 @@ html(lang=t("site.lang:en"), dir="auto")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     block head
       title= t('site.title')
-    |!{build.bundles(['nguibs', 'main'])}
+    |!{build.bundles(['jqbs', 'ko', 'main'])}
   body
     block content
       p!= '&nbsp;'
