@@ -1,5 +1,9 @@
-body {
-  background-color: ghostwhite;
-  padding-top: 60px;
+/*body {
+    background-color:ghostwhite;
+    padding-top: 60px;
+}*/
+a.navbar-brand {
+  padding: 5px 5px;
 }
-/*# sourceMappingURL=/lib/main/css/site.css.map */
+
+/*# sourceMappingURL=site.css.map */

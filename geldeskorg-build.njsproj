@@ -16,12 +16,13 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="src\apple-touch-icon.png" />
+    <Content Include="src\browserconfig.xml" />
     <Content Include="src\lib\main\js\site.js" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\hello.jade" />
-    <Content Include="src\hello\goodbye\index.jade" />
     <Content Include="src\index.jade" />
     <Content Include="src\lib\main\base.layout.jade" />
     <Content Include="src\lib\main\css\site.css" />
@@ -31,6 +32,8 @@
     <Content Include="src\lib\main\img\pattern.png" />
     <Content Include="src\lib\main\img\tiger.jpg" />
     <Content Include="src\lib\main\partials\test.html" />
+    <Content Include="src\tile-wide.png" />
+    <Content Include="src\tile.png" />
     <Content Include="staticbuild.json" />
     <Content Include="README.md" />
     <Compile Include="gulpfile.js" />
@@ -40,8 +43,6 @@
   <ItemGroup>
     <Folder Include="locales" />
     <Folder Include="src\" />
-    <Folder Include="src\hello\" />
-    <Folder Include="src\hello\goodbye\" />
     <Folder Include="src\lib\" />
     <Folder Include="src\lib\main\" />
     <Folder Include="src\lib\main\css\" />
