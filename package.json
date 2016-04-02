@@ -36,7 +36,7 @@
     "jshint-stylish": "^2.0.0",
     "lodash": "^3.10.0",
     "run-sequence": "^1.1.4",
-    "staticbuild": "0.12.3",
+    "staticbuild": "0.12.4",
     "vinyl-paths": "^1.0.0"
   }
 }
