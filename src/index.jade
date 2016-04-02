@@ -2,12 +2,17 @@ extends ./lib/main/base.layout.jade
 block head
   title= t('site.title')
 block content
-  h4 #{t('site.greeting')} #{t('site.title')}!
-  p!= '&nbsp;'
-  h5 Facts
-  ul
-    li Package: #{build.pkg.name} v#{build.pkg.version}
-    li Description: #{build.pkg.description}
-    li In development mode: #{build.dev}
-    li Locale: #{build.locale}
-  p!= '&nbsp;'
+  .jumbotron
+    .container
+      h1 #{t('site.greeting')} #{t('site.title')}!
+      p!= '&nbsp;'
+      p
+        a.bn.btn-primary.btn-lg(href='https://github.com/geldesk', role='button')!= 'GitHub &raquo;'
+      p!= '&nbsp;'
+      h5 Facts
+      ul
+        li Package: #{build.pkg.name} v#{build.pkg.version}
+        li Description: #{build.pkg.description}
+        li In development mode: #{build.dev}
+        li Locale: #{build.locale}
+      p!= '&nbsp;'

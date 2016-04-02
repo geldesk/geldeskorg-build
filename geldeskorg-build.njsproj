@@ -22,7 +22,6 @@
     <Content Include="bower.json" />
     <Content Include="package.json" />
     <Content Include="src\favicon.ico" />
-    <Content Include="src\hello.jade" />
     <Content Include="src\index.jade" />
     <Content Include="src\lib\main\base.layout.jade" />
     <Content Include="src\lib\main\css\site.css" />
