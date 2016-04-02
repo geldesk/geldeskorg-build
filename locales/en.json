@@ -3,6 +3,8 @@
     "title": "GelDesk",
     "lang": "en",
     "greeting": "Welcome to",
-    "copyright": "Copyright @ Devoptix LLC 2015"
+    "copyright": "Copyright @ Devoptix LLC 2016",
+    "primaryDomain": "geldesk.org",
+    "description": "site.description"
   }
 }
