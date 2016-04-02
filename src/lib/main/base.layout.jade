@@ -1,9 +1,9 @@
 doctype html
-html(lang=t("site.lang:en"), dir="auto")
+html(lang=t('site.lang'), dir='auto')
   head
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     block head
       title= t('site.title')
     |!{build.bundles(['jqbs', 'ko', 'main'])}
@@ -11,5 +11,5 @@ html(lang=t("site.lang:en"), dir="auto")
     block content
       p!= '&nbsp;'
 
-    = "\n    "    
-    em= t("site.copyright:Copyright @ Devoptix LLC 2015")
+    = '\n    '
+    em= t('site.copyright')
