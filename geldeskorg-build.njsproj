@@ -18,8 +18,12 @@
   <ItemGroup>
     <Content Include="src\apple-touch-icon.png" />
     <Content Include="src\browserconfig.xml" />
+    <Content Include="src\lib\main\img\natwin-600x425-opt.png" />
     <Content Include="src\lib\main\img\neon-json-230x180-opt.png" />
-    <Content Include="src\lib\main\img\paste-logo-275x43-opt.png" />
+    <Content Include="src\lib\main\img\neon-json-375x425-opt.png" />
+    <Content Include="src\lib\main\img\neon-json-p2-230x180-opt.png" />
+    <Content Include="src\lib\main\img\paste-logo-245x38-opt.png" />
+    <Content Include="src\lib\main\img\round-arrow-r-blue-opt.jpg" />
     <Content Include="src\lib\main\js\site.js" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
