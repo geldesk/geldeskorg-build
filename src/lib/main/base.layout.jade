@@ -28,12 +28,10 @@ html(lang=t('site.lang') dir='auto')
             img(src='lib/main/img/paste-logo-295x46-opt.png' 
               width='295' height='46')
         #navbar.navbar-collapse.collapse
-          ul.nav.navbar-nav
-            li: a(href='#') Guides
+          ul.nav.navbar-nav.navbar-right
+            li: a(href='#') Introduction
             li: a(href='#') API
             li: a(href=t('url.github')) GitHub
-            //li: a(href='#') Blog
-            //li: a(href='#') Builds
     //- CONTENT
     block content
       p!= '&nbsp;'
