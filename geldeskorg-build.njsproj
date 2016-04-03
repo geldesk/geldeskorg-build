@@ -31,6 +31,7 @@
     <Content Include="src\lib\main\img\pattern.png" />
     <Content Include="src\lib\main\img\tiger.jpg" />
     <Content Include="src\lib\main\partials\test.html" />
+    <Content Include="src\sample.json" />
     <Content Include="src\tile-wide.png" />
     <Content Include="src\tile.png" />
     <Content Include="staticbuild.json" />

@@ -1,0 +1,107 @@
+[
+  "window:geldesk.ui.Window", {
+    "startPosition": "center",
+    "title": "A Native Window",
+    "visible": true,
+    "e": ["resized"]
+  },
+  ["data:geldesk.ObjectSet", {},
+    [
+      "root", {
+        "explorer": {
+          "nodes": [
+            {
+              "text": "Hello",
+              "nodes": [{"text": "Hi"}]
+            },
+            {
+              "text": "Goodbye",
+              "nodes": [{"text": "Bye"}]
+            }
+          ]
+        },
+        "status": {"main": "Ready", "user": "You"}
+      }
+    ]
+  ],
+  ["commands:geldesk.CommandSet", {},
+    [
+      "app", {"text": "_File"},
+      ["open", {"enabled": false, "text": "_Open"}],
+      ["exit", {"text": "E_xit"}]
+    ],
+    [
+      "edit", {"text": "_Edit"},
+      ["undo", {"group": "hist", "text": "_Undo"}],
+      ["redo", {"group": "hist", "text": "_Redo"}],
+      ["cut", {"group": "clip", "text": "Cu_t"}],
+      ["copy", {"group": "clip", "text": "_Copy"}],
+      ["paste", {"group": "clip", "text": "_Paste"}]
+    ],
+    [
+      "view", {"text": "_View"},
+      ["things", {"text": "_Things"}]
+    ],
+    [
+      "help", {"text": "_Help"},
+      ["about", {"text": "_About"}]
+    ]
+  ],
+  ["menu:geldesk.ui.Menu", {"bind": "commands"}],
+  [
+    "tools:geldesk.ui.Toolbar", {},
+    ["open:geldesk.ui.ToolItem", {"type": "button", "bind": "app/open"}],
+    ["exit:geldesk.ui.ToolItem", {"type": "button", "bind": "app/exit"}],
+    ["view:geldesk.ui.ToolItem", {"type": "button", "bind": "view"}]
+  ],
+  [
+    "status:geldesk.ui.Statusbar", {},
+    ["label:geldesk.ui.StatusItem", {"type": "label", "text": "[label]"}]
+  ],
+  [
+    "panel:geldesk.ui.Panel", {"dock": "left-split"}, 
+    ["textBox:geldesk.ui.TextBox", {"dock": "top", "placeholder": "Entry 1"}],
+    ["textBox1:geldesk.ui.TextBox", {"dock": "top", "placeholder": "Entry 2"}],
+    ["textBox2:geldesk.ui.TextBox", {"dock": "top", "placeholder": "Entry 3"}],
+    ["comboBox:geldesk.ui.ComboBox", {"dock": "top", "placeholder": "Entry 4"}],
+    ["checkBox:geldesk.ui.CheckBox", {"dock": "top", "checked": true, "text": "Check 1"}],
+    ["checkBox1:geldesk.ui.CheckBox", {"dock": "top", "checked": true, "text": "Check 2"}],
+    ["checkBox2:geldesk.ui.CheckBox", {"dock": "top", "checked": false, "text": "Check 3"}],
+    ["button:geldesk.ui.Button", {"bind": "app/exit", "dock": "top"}],
+    ["treeView:geldesk.ui.TreeView", {
+        "dock": "fill",
+        "nodes": [
+          {
+            "text": "Node 1",
+            "nodes": [
+              {"text": "Child 1 of Node 1"},
+              {"text": "Child 2 of Node 1"}
+            ]
+          },
+          {
+            "text": "Node 2",
+            "nodes": [
+              {"text": "Child 1 of Node 2"},
+              {"text": "Child 2 of Node 2"}
+            ]
+          },
+          {
+            "text": "Node 3",
+            "nodes": [
+              {"text": "Child 1 of Node 3"},
+              {"text": "Child 2 of Node 3"}
+            ]
+          }
+        ]
+      }
+    ]
+  ],
+  ["browser:geldesk.ui.Browser", {
+    "dock": "fill",
+    "url": "https://getbootstrap.com/examples/grid/"
+  }],
+  ["dataGrid:geldesk.ui.DataGrid", {
+    "dock": "bottom-split",
+    "columns": ["Column1", "Column2", "Column3"]
+  }]
+]

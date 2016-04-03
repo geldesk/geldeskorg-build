@@ -1,11 +1,16 @@
 extends ./lib/main/base.layout.jade
-block head
-  title= t('site.title')
 block content
   .jumbotron
     .container
-      h1 #{t('site.greeting')} #{t('site.product')}!
+      h1 A framework for creating native cross-platform, multi-process desktop applications (with your favorite programming language)
       p!= '&nbsp;'
       p
-        a.bn.btn-primary.btn-lg(href='https://github.com/geldesk' role='button')!= 'GitHub &raquo;'
+        Installation instructions coming soon!
+      p
+        a.bn.btn-primary.btn-lg(href=t('url.github') role='button')!= 'GitHub &raquo;'
       p!= '&nbsp;'
+      h4 How it works
+      ul
+        li 1.
+        li 2.
+        li 3.

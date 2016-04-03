@@ -4,11 +4,13 @@ html(lang=t('site.lang') dir='auto')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=edge')
     meta(name='viewport' content='width=device-width, initial-scale=1')
-    block head
-      title= t('site.title')
-    meta(name='description' content=t('site.description'))
+    block title
+      title #{t('site.title')} &middot; #{t('site.tagline')}
+    block description
+      meta(name='description' content=t('site.description'))
     link(rel='apple-touch-icon' href='apple-touch-icon.png')
-    |!{build.bundles(['jqbs', 'ko', 'main'])}
+    block bundles
+      |!{build.bundles(['jqbs', 'ko', 'main'])}
   body
     //- NAVBAR
     .navbar.navbar-inverse.navbar-fixed-top(role='navigation')
@@ -25,11 +27,16 @@ html(lang=t('site.lang') dir='auto')
           a.navbar-brand(href='#')
             img(src='lib/main/img/paste-logo-295x46-opt.png' 
               width='295' height='46')
-
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li: a(href='#') Guides
+            li: a(href='#') API
+            li: a(href=t('url.github')) GitHub
+            //li: a(href='#') Blog
+            //li: a(href='#') Builds
     //- CONTENT
     block content
       p!= '&nbsp;'
-
     //- FOOTER
     = '\n    '
     //- The next container should probably be in a footer.
