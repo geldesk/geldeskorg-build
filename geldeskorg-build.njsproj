@@ -23,7 +23,7 @@
     <Content Include="src\lib\main\img\neon-json-375x425-opt.png" />
     <Content Include="src\lib\main\img\neon-json-p2-230x180-opt.png" />
     <Content Include="src\lib\main\img\paste-logo-245x38-opt.png" />
-    <Content Include="src\lib\main\img\round-arrow-r-blue-opt.jpg" />
+    <Content Include="src\lib\main\img\round-arrow-r-blue-40x40-opt.jpg" />
     <Content Include="src\lib\main\js\site.js" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
