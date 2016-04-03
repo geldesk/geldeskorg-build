@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4cea870a-3198-4378-b56d-07e307dd269a}</ProjectGuid>
     <ProjectHome />
-    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectView>ShowAllFiles</ProjectView>
     <StartupFile>node_modules\staticbuild\bin\staticbuild</StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -18,6 +18,8 @@
   <ItemGroup>
     <Content Include="src\apple-touch-icon.png" />
     <Content Include="src\browserconfig.xml" />
+    <Content Include="src\lib\main\img\neon-json-230x180-opt.png" />
+    <Content Include="src\lib\main\img\paste-logo-275x43-opt.png" />
     <Content Include="src\lib\main\js\site.js" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
@@ -27,9 +29,6 @@
     <Content Include="src\lib\main\css\site.css" />
     <Content Include="src\lib\main\css\site.css.map" />
     <Content Include="src\lib\main\css\site.less" />
-    <Content Include="src\lib\main\img\loop.gif" />
-    <Content Include="src\lib\main\img\pattern.png" />
-    <Content Include="src\lib\main\img\tiger.jpg" />
     <Content Include="src\lib\main\partials\test.html" />
     <Content Include="src\sample.json" />
     <Content Include="src\tile-wide.png" />

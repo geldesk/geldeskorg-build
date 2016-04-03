@@ -1,33 +1,76 @@
 extends ./lib/main/base.layout.jade
 block content
+  a(name='introduction')
   .jumbotron
     .container
-      h1.text-center: small.
-        A framework for creating #[strong native] cross-platform, #[br]
+      h1.text-center(style='margin: 0 auto; max-width: 900px'): small.
+        A framework for creating #[strong native] cross-platform, 
         #[strong multi-process] desktop applications
   .container
-    pre(style='margin: 0 auto; max-width:280px;').
-      npm install -g geldesk-sdk
-      geldesk-sdk create myNewApp
+    pre(style='margin: 0 auto; max-width:340px;').
+      # Installation instructions coming soon...
+      npm install -g something-like-this
     p!= '&nbsp;'
     p.text-center
       a.bn.btn-primary.btn-lg(href=t('url.github') 
         role='button')!= 'GitHub &raquo;'
     p!= '&nbsp;'
-    h2(style='padding-left: 20px') How it works
+    div(style='padding-left: 20px')
+      h2 How it works
+      p.
+        #{t('site.description')}
+      p!= '&nbsp;'
+  a(name='features')
   .jumbotron: .container
-    .col-xs-12.col-md-4
-      .panel.panel-primary
-        .panel-heading: h3.panel-title Hello
-        .panel-body.
-          Hi There
-    .col-xs-12.col-md-4
-      .panel.panel-primary
-        .panel-heading: h3.panel-title Hello
-        .panel-body.
-          Hi There
-    .col-xs-12.col-md-4
-      .panel.panel-primary
-        .panel-heading: h3.panel-title Hello
-        .panel-body.
-          Hi There
+    h1 Features
+    p!= '&nbsp;'
+    .row
+      .col-xs-12.col-md-4
+        .panel.panel-primary
+          .panel-heading: h3.panel-title Feature 1
+          .panel-body
+            img(src='lib/main/img/neon-json-230x180-opt.png' width='230' height='180')
+      .col-xs-12.col-md-4
+        .panel.panel-primary
+          .panel-heading: h3.panel-title Feature 2
+          .panel-body
+            img(src='lib/main/img/neon-json-230x180-opt.png' width='230' height='180')
+      .col-xs-12.col-md-4
+        .panel.panel-primary
+          .panel-heading: h3.panel-title Feature 3
+          .panel-body
+            img(src='lib/main/img/neon-json-230x180-opt.png' width='230' height='180')
+    .row
+      .col-xs-12.col-md-4
+        .panel.panel-primary
+          .panel-heading: h3.panel-title Feature 4
+          .panel-body
+            img(src='lib/main/img/neon-json-230x180-opt.png' width='230' height='180')
+      .col-xs-12.col-md-4
+        .panel.panel-primary
+          .panel-heading: h3.panel-title Feature 5
+          .panel-body
+            img(src='lib/main/img/neon-json-230x180-opt.png' width='230' height='180')
+      .col-xs-12.col-md-4
+        .panel.panel-primary
+          .panel-heading: h3.panel-title Feature 6
+          .panel-body
+            img(src='lib/main/img/neon-json-230x180-opt.png' width='230' height='180')
+    a(name='api')
+    p!= '&nbsp;'
+    h1 API
+    p!= '&nbsp;'
+    p
+      ul
+        li Stuff is going to work
+        li Things will be listed here
+        li This is just a temporary place-holder.
+    p!= '&nbsp;'
+    h2 Contribute to the project!
+    p.
+      Say some things here...
+    p!= '&nbsp;'
+    p.text-center
+      a.bn.btn-primary.btn-lg(href=t('url.github') 
+        role='button')!= 'GitHub &raquo;'
+    p!= '&nbsp;'

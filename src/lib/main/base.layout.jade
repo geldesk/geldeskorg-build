@@ -24,13 +24,14 @@ html(lang=t('site.lang') dir='auto')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='#')
-            img(src='lib/main/img/paste-logo-295x46-opt.png' 
-              width='295' height='46')
+          a.navbar-brand(href='/')
+            img(src='lib/main/img/paste-logo-275x43-opt.png' 
+              width='275' height='43')
         #navbar.navbar-collapse.collapse
           ul.nav.navbar-nav.navbar-right
-            li: a(href='#') Introduction
-            li: a(href='#') API
+            li: a(href='#introduction') Introduction
+            li: a(href='#features') Features
+            li: a(href='#api') API
             li: a(href=t('url.github')) GitHub
     //- CONTENT
     block content
@@ -39,5 +40,12 @@ html(lang=t('site.lang') dir='auto')
     = '\n    '
     //- The next container should probably be in a footer.
     .container
-      em #{t('site.domain')} v#{build.pkg.version} #[small (#{build.locale})]
-      em.pull-right= t('site.copyright')
+      em.
+        #{t('site.copyright')}
+        
+      em.pull-right
+        = t('site.domain') + ' '
+        | v#{build.pkg.version} 
+        small (#{build.locale}) 
+        != '&nbsp;'
+        a(href=t('url.websiteIssues')) Help
