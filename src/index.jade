@@ -6,7 +6,8 @@ block content
       h1.text-center(style='margin: 0 auto; max-width: 900px'): small.
         A framework for creating #[strong native] cross-platform, 
         #[strong multi-process] desktop applications
-  .container
+  .container    
+    p.text-center: em: strong Work has begun on the Swift/Cocoa UI...Mac OS X screenshot coming soon!
     .row: .col-xs-12: .panel.panel-default: .panel-body
       .col-xs-12.col-lg-4.text-center 
         h3 GelDesk turns this...
@@ -25,15 +26,19 @@ block content
           style='margin-left: auto; margin-right: auto;'
           width='600' height='425')
     p!= '&nbsp;'
-    p.text-center
-      a.bn.btn-primary.btn-lg(href=t('url.github') 
-        role='button')!= 'GitHub &raquo;'
-    p!= '&nbsp;'
     div(style='padding-left: 20px')
       h2 How it works
       p.
         #{t('site.description')}
-      p!= '&nbsp;'
+    a(name='alpha')
+    p!= '&nbsp;'
+    p.text-center
+      a.bn.btn-primary.btn-lg(href=t('url.github') 
+        role='button')!= 'GitHub &raquo;'
+      br
+      br
+      em: strong (Project is currently in the alpha stage.)
+    p!= '&nbsp;'
   a(name='features')
   .jumbotron: .container
     h1 Features
@@ -41,38 +46,38 @@ block content
     .row
       .col-xs-12.col-md-4
         .panel.panel-primary
-          .panel-heading: h3.panel-title Feature 1
+          .panel-heading: h3.panel-title Declarative UI
           .panel-body
             img(src='lib/main/img/neon-json-230x180-opt.png' 
               width='230' height='180')
       .col-xs-12.col-md-4
         .panel.panel-primary
-          .panel-heading: h3.panel-title Feature 2
+          .panel-heading: h3.panel-title Abstract Components
           .panel-body
             img(src='lib/main/img/neon-json-230x180-opt.png' 
               width='230' height='180')
       .col-xs-12.col-md-4
         .panel.panel-primary
-          .panel-heading: h3.panel-title Feature 3
+          .panel-heading: h3.panel-title Data and Command Binding
           .panel-body
             img(src='lib/main/img/neon-json-230x180-opt.png' 
               width='230' height='180')
     .row
       .col-xs-12.col-md-4
         .panel.panel-primary
-          .panel-heading: h3.panel-title Feature 4
+          .panel-heading: h3.panel-title Simple Docking Layout
           .panel-body
             img(src='lib/main/img/neon-json-p2-230x180-opt.png' 
               width='230' height='180')
       .col-xs-12.col-md-4
         .panel.panel-primary
-          .panel-heading: h3.panel-title Feature 5
+          .panel-heading: h3.panel-title System Browser or WebKit
           .panel-body
             img(src='lib/main/img/neon-json-p2-230x180-opt.png' 
               width='230' height='180')
       .col-xs-12.col-md-4
         .panel.panel-primary
-          .panel-heading: h3.panel-title Feature 6
+          .panel-heading: h3.panel-title High Performance Data Grid
           .panel-body
             img(src='lib/main/img/neon-json-p2-230x180-opt.png' 
               width='230' height='180')
@@ -82,13 +87,13 @@ block content
     p!= '&nbsp;'
     p
       ul
-        li Stuff is going to work
-        li Things will be listed here
-        li This is just a temporary place-holder.
+        li Placeholder for API summary and link to reference...
     p!= '&nbsp;'
     h2 Contribute to the project!
     p.
-      Say some things here...
+      I am looking for contributors who can code primarily in one or more of: Javascript, Swift, Golang, Python or C#.
+    p.
+      So far, there is an alpha Node.js client, an alpha C#/WinForms UI and the beginnings of an alpha Swift/Cocoa UI.
     p!= '&nbsp;'
     p.text-center
       a.bn.btn-primary.btn-lg(href=t('url.github') 
