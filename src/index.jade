@@ -8,18 +8,22 @@ block content
         #[strong multi-process] desktop applications
   .container
     .row: .col-xs-12: .panel.panel-default: .panel-body
-      .col-xs-12.col-md-5.text-center 
+      .col-xs-12.col-lg-4.text-center 
         h3 GelDesk turns this...
-        img(src='lib/main/img/neon-json-375x425-opt.png' 
-              width='375' height='425')
-        img.hidden-xs.hidden-sm(
-          src='lib/main/img/round-arrow-r-blue-40x40-opt.jpg' 
-          style='margin-left:16px;'
-          width='40' height='40')
-      .col-xs-12.col-md-7.text-center 
+        img.img-responsive(
+          src='lib/main/img/neon-json-375x425-opt.png' 
+          style='margin-top: 30px; margin-left: auto; margin-right: auto;'
+          width='375' height='425')
+      .col-xs-12.col-lg-8.text-center 
         h3 into this...
-        img(src='lib/main/img/natwin-600x425-opt.png' 
-              width='600' height='425')
+        img.hidden-xs.hidden-sm.hidden-md(
+          src='lib/main/img/round-arrow-r-blue-40x40-opt.jpg' 
+          style='float: left; margin-right: 8px; margin-top: 170px;'
+          width='40' height='40')
+        img.img-responsive(
+          src='lib/main/img/natwin-600x425-opt.png' 
+          style='margin-left: auto; margin-right: auto;'
+          width='600' height='425')
     p!= '&nbsp;'
     p.text-center
       a.bn.btn-primary.btn-lg(href=t('url.github') 

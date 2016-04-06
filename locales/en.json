@@ -2,14 +2,14 @@
   "site": {
     "lang": "en",
     "domain": "geldesk.org",
-    "product": "GelDesk",
-    "title": "GelDesk",
-    "tagline": "Experimental cross-platform, multi-process desktop UI.",
+    "product": "GelDesk (alpha)",
+    "tagline": "An experimental cross-platform, multi-process desktop UI.",
     "description": "GelDesk is a dynamic, native desktop UI that can be controlled from any programming language. The user interface is executed in its own process while programming logic is executed in one (or more) other processes. It can be integrated with any language that can use JSON and some form of inter-process communication (IPC).",
     "copyright": "Copyright @ Devoptix LLC 2016"
   },
   "url": {
     "github": "https://github.com/geldesk",
+    "staticbuildGithub": "https://github.com/devoptix/staticbuild",
     "websiteIssues": "https://github.com/geldesk/geldesk.github.io/issues"
   }
 }

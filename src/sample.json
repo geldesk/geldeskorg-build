@@ -22,8 +22,7 @@
         },
         "status": {"main": "Ready", "user": "You"}
       }
-    ]
-  ],
+    ]],
   ["commands:CommandSet", {},
     [
       "app", {"text": "_File"},
@@ -45,8 +44,7 @@
     [
       "help", {"text": "_Help"},
       ["about", {"text": "_About"}]
-    ]
-  ],
+    ]],
   ["menu:Menu", {"bind": "commands"}],
   ["tools:Toolbar", {},
     ["open", {"bind": "app/open"}],
@@ -91,8 +89,7 @@
           }
         ]
       }
-    ]
-  ],
+    ]],
   ["browser:Browser", {
     "dock": "fill",
     "url": "https://getbootstrap.com/examples/grid/"
@@ -102,3 +99,4 @@
     "columns": ["Column1", "Column2", "Column3"]
   }]
 ]
+
