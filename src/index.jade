@@ -42,6 +42,10 @@ block content
   a(name='features')
   .jumbotron: .container
     h1 Features
+    p
+      | For now you can see where each feature is encoded in the JSON, before 
+      | transport over IPC to the native UI where it is implemented. 
+      em (Better visual representation is forthcoming!)
     p!= '&nbsp;'
     .row
       .col-xs-12.col-md-4
@@ -91,9 +95,13 @@ block content
     p!= '&nbsp;'
     h2 Contribute to the project!
     p.
-      I am looking for contributors who can code primarily in one or more of: Javascript, Swift, Golang, Python or C#.
+      We are looking for contributors who can help make this project great! Please contribute in any way that you can.
     p.
       So far, there is an alpha Node.js client, an alpha C#/WinForms UI and the beginnings of an alpha Swift/Cocoa UI.
+    p.
+      A Go (golang) client and a Python client are on the roadmap as well, among many possible others.
+    p.
+      Before we start building on more platforms though, it would be nice to have a solid, well documented spec.
     p!= '&nbsp;'
     p.text-center
       a.bn.btn-primary.btn-lg(href=t('url.github') 
