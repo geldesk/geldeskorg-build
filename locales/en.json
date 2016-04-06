@@ -9,6 +9,8 @@
   },
   "url": {
     "github": "https://github.com/geldesk",
+    "githubNode": "https://github.com/geldesk/geldesk-node",
+    "githubNodeLabBasic": "https://github.com/geldesk/geldesk-node/tree/master/lab/basic",
     "staticbuildGithub": "https://github.com/devoptix/staticbuild",
     "websiteIssues": "https://github.com/geldesk/geldesk.github.io/issues"
   }

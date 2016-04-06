@@ -44,7 +44,7 @@ block content
     h1 Features
     p
       | For now you can see where each feature is encoded in the JSON, before 
-      | transport over IPC to the native UI where it is implemented. 
+      | it is expanded and sent over IPC to the native UI process. 
       em (Better visual representation is forthcoming!)
     p!= '&nbsp;'
     .row
@@ -88,20 +88,48 @@ block content
     a(name='api')
     p!= '&nbsp;'
     h1 API
+    p.
+      Here is a sample of the API for Node.js. GelDesk runs the Node app, 
+      which communicates back to GelDesk via a line-delimited JSON RPC system 
+      that can work with any type of IPC, such as standard I/O, domain 
+      sockets or named pipes.
+    .row
+      .col-xs-12.col-md-6
+        pre
+          | #[span.text-success app.js]
+          | 
+          | 
+          code.hljs!= highlightJS(readFile('./sample/app.js'))
+      .col-xs-12.col-md-6        
+        pre
+          | #[span.text-success views/main/window.js]
+          | 
+          | 
+          code.hljs!= highlightJS(readFile('./sample/window.js'))
     p!= '&nbsp;'
-    p
-      ul
-        li Placeholder for API summary and link to reference...
+    p.
+      Take a look at the #[a(href=t('url.githubNode')) Node.js API] code 
+      to see what else is going on. These files came from 
+      #[a(href=t('url.githubNodeLabBasic')) lab/basic].
     p!= '&nbsp;'
     h2 Contribute to the project!
     p.
-      We are looking for contributors who can help make this project great! Please contribute in any way that you can.
+      We are looking for contributors who can help make this project great! 
+      Please contribute in any way that you can.
     p.
-      So far, there is an alpha Node.js client, an alpha C#/WinForms UI and the beginnings of an alpha Swift/Cocoa UI.
+      So far, there is an alpha Node.js client, an alpha C#/WinForms UI and 
+      a good start on the alpha Swift/Cocoa UI. We need involvement on this
+      before we go to beta so that we have a solid foundation to build on.
     p.
-      A Go (golang) client and a Python client are on the roadmap as well, among many possible others.
+      A Go (golang) client and a Python client are on the roadmap among many 
+      possible other languages. Some other important items on the roadmap are 
+      a GTK UI and a WPF front-end for the Windows UI. WPF will definitely 
+      happen, I can promise you that one!
     p.
-      Before we start building on more platforms though, it would be nice to have a solid, well documented spec.
+      Before we start building on more platforms though, it would be nice to 
+      have a well documented spec for the RPC system and the core components 
+      and a really solid implementation on the initial platforms (Node, 
+      WinForms, Cocoa).
     p!= '&nbsp;'
     p.text-center
       a.bn.btn-primary.btn-lg(href=t('url.github') 

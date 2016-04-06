@@ -3,6 +3,7 @@
   "pathMap": {
     "bower": { "fs": "bower_components" }
   },
+  "contextFile": "./view-context.js",
   "bundle": {
     "jqbs": {
       "scripts": [
@@ -27,6 +28,7 @@
         "/lib/main/js/site.js"
       ],
       "styles": [
+        "/lib/main/css/monokai-sublime.css",
         "/lib/main/css/site.css"
       ]
     }
