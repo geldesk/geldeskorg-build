@@ -40,10 +40,11 @@ html(lang=t('site.lang') dir='auto')
     //- FOOTER
     = '\n    '
     //- The next container should probably be in a footer.
-    .container
-      em.
+    .container.text-center
+      em.pull-left.
         #{t('site.copyright')}
-        
+      em.
+        This site built with #[a(href=t('url.staticbuildGithub')) staticbuild].
       em.pull-right
         = t('site.domain') + ' '
         | v#{build.pkg.version} 
